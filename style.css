@@ -1,0 +1,101 @@
+body {
+  margin: 75px;
+  padding: 23px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/236/original/sky.jpg?1654337658");
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+}
+
+h2,
+#temperature {
+  color: white;
+  font-size: 40px;
+}
+
+.time,
+h3 {
+  font-size: 25px;
+  color: white;
+}
+
+#degree {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  font-size: 20px;
+  color: white;
+}
+
+.sunnycloud {
+  width: 200px;
+  float: right;
+  position: relative;
+  top: -100px;
+}
+
+p {
+  text-align: center;
+  color: whitesmoke;
+  position: relative;
+  top: -100px;
+}
+
+.weatherinfo,
+ul {
+  color: white;
+}
+
+.precipitation_info,
+.wind_info {
+  color: white;
+  display: block;
+  position: relative;
+  top: 25px;
+}
+
+.time_info,
+.temperature_info .day {
+  font-size: 20px;
+  color: white;
+}
+
+.col-1 {
+  background-color: darkcyan;
+  opacity: 75%;
+}
+
+.col-2 {
+  color: white;
+}
+.col-2:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+button {
+  background-color: darkcyan;
+  color: oldlace;
+  border: solid 1px;
+  padding: 90px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+}
+
+button:hover {
+  background-color: rgb(2, 118, 118);
+}
+.col-1:hover {
+  background-color: rgb(2, 118, 118);
+}
+.max_temp,
+.min_temp {
+  position: relative;
+  text-align: left;
+  left: 100px;
+  top: -50px;
+}
