@@ -20,10 +20,15 @@
 
 </head>
   <body>
+
       <div class="container">
           <h1>Today, 28 May</h1>
-          <h3 class="time">13:00</h3> 
+          <span class="timeframe">Last updated today at<span class="time"> 18:50</span></span>
+          
           <br />
+          <br />
+          <br />
+          
           <form id="search-form">
           <input id="city-input" placeholder="Enter a town, city or UK postcode" style="width: 18rem;" autofocus=on/>
           <input type="submit" value="Search" class="btn btn-primary shadow-sm">
@@ -34,14 +39,14 @@
           <br />
           <br />
 
-
           <div class="row align-items-start">
-          <div class="col-4">
-          <div><h2 id="city">London</h2></div><span id="temperature">18</span><span id="degree">°C |°F</span>  
-          <img class="sunnycloud" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/237/original/sunnycloud.png?1654337860" alt=""> 
-           <span>
-          <ul>
-            <span id="description">Sunny</span>
+          <div class="col-sm-4">
+          <div><h2 id="city">London</h2></div>
+          <span id="temperature">18</span><a href="#" id="celsius-link" class="active">°C</a> <span class="dash">|</span><a href="#" id="fahrenheit-link">°F</a>
+          
+          <img src="#" id="icon" alt="sunny cloud"> 
+            <ul>
+              <li id="description">Sunny</li>
              <li>Humidity: <span id="humidity">52</span>%</li>
              <li>Wind: <span id="wind">9</span>mph</span></li>
            </ul>
@@ -104,11 +109,10 @@
       </div> 
       
       <div class="col-1">
-        <button> > </button>
+        <button class="bracket"> > </button>
       </div>  
       
-      
-      
+
       <div class="row align-items-start">
         <div class="col-2">
         <div class="day">Sat</div>

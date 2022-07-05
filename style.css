@@ -1,6 +1,6 @@
 body {
-  margin: 75px;
-  padding: 23px;
+  margin: 50px;
+  padding: 20px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/236/original/sky.jpg?1654337658");
 }
 
@@ -15,21 +15,31 @@ h2,
   font-size: 40px;
 }
 
-.time,
 h3 {
   font-size: 25px;
   color: white;
 }
 
-#degree {
-  display: inline-block;
-  position: relative;
-  top: -15px;
-  font-size: 20px;
-  color: white;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.sunnycloud {
+#celsius-link,
+#fahrenheit-link,
+.dash {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  text-decoration: none;
+}
+
+.dash {
+  color: #383838;
+}
+
+#icon {
   width: 200px;
   float: right;
   position: relative;
@@ -44,8 +54,10 @@ p {
 }
 
 .weatherinfo,
+.timeframe,
 ul {
   color: white;
+  padding: 0;
 }
 
 .precipitation_info,
@@ -64,10 +76,11 @@ ul {
 
 .col-1 {
   background-color: darkcyan;
-  opacity: 75%;
+  opacity: 85%;
 }
 
 .col-2 {
+  margin-top: 50px;
   color: white;
 }
 .col-2:hover {
@@ -75,15 +88,16 @@ ul {
   transform: scale(1.5);
 }
 
-button {
+button.bracket {
   background-color: darkcyan;
   color: oldlace;
   border: solid 1px;
-  padding: 90px 15px;
+  padding: 87px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 35px;
+  float: right;
 }
 
 button:hover {
@@ -98,4 +112,17 @@ button:hover {
   text-align: left;
   left: 100px;
   top: -50px;
+}
+
+footer {
+  color: #383838;
+}
+
+.active {
+  color: white;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }
