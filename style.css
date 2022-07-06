@@ -106,8 +106,8 @@ button:hover {
 .col-1:hover {
   background-color: rgb(2, 118, 118);
 }
-.max_temp,
-.min_temp {
+.weather-forecast-temperature-max,
+.weather-forecast-temperature-min {
   position: relative;
   text-align: left;
   left: 100px;
