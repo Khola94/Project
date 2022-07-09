@@ -1,23 +1,21 @@
 body {
-  margin: 50px;
-  padding: 20px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/236/original/sky.jpg?1654337658");
+  color: white;
+  padding: 80px;
+  border: 50px;
 }
 
 h1 {
-  color: white;
   font-size: 48px;
 }
 
 h2,
 #temperature {
-  color: white;
   font-size: 40px;
 }
 
 h3 {
   font-size: 25px;
-  color: white;
 }
 
 li {
@@ -41,71 +39,25 @@ li {
 
 #icon {
   width: 200px;
-  float: right;
-  position: relative;
-  top: -100px;
-}
-
-p {
-  text-align: center;
-  color: whitesmoke;
-  position: relative;
-  top: -100px;
+  position: absolute;
+  left: 300px;
+  top: 300px;
 }
 
 .weatherinfo,
 .timeframe,
 ul {
-  color: white;
   padding: 0;
-}
-
-.precipitation_info,
-.wind_info {
-  color: white;
-  display: block;
-  position: relative;
-  top: 25px;
-}
-
-.time_info,
-.temperature_info .day {
-  font-size: 20px;
-  color: white;
-}
-
-.col-1 {
-  background-color: darkcyan;
-  opacity: 85%;
 }
 
 .col-2 {
   margin-top: 50px;
-  color: white;
 }
 .col-2:hover {
   cursor: pointer;
   transform: scale(1.5);
 }
 
-button.bracket {
-  background-color: darkcyan;
-  color: oldlace;
-  border: solid 1px;
-  padding: 87px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 35px;
-  float: right;
-}
-
-button:hover {
-  background-color: rgb(2, 118, 118);
-}
-.col-1:hover {
-  background-color: rgb(2, 118, 118);
-}
 .weather-forecast-temperature-max,
 .weather-forecast-temperature-min {
   position: relative;
