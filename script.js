@@ -5,8 +5,8 @@ function searchCity(city) {
 }
 
 function displayWeather(response) {
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = new Date().toUTCString().slice(0, 16);
+  let h5 = document.querySelector("h5");
+  h5.innerHTML = new Date().toUTCString().slice(0, 16);
 
   document.querySelector(".time").innerHTML = new Date()
     .toLocaleString()
