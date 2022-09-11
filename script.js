@@ -20,9 +20,10 @@ function displayWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
-
+  let maxTemp = document.querySelector("#max");
+  maxTemp.innerHTML = Math.round(response.data.main.temp_max);
+  let minTemp = document.querySelector("#min");
+  minTemp.innerHTML = Math.round(response.data.main.temp_min);
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",

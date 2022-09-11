@@ -15,48 +15,94 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
 
-</head>
   <body>
-
-      <div class="container">
-          <h1>Today, 28 May</h1>
-          <span class="timeframe">Last updated today at<span class="time"> 18:50</span></span>
-          
-          <br />
-          <br />
-          <br />
-          
-          <form id="search-form">
-          <input id="city-input" placeholder="Enter a town, city or UK postcode" style="width: 18rem;" autofocus=on/>
-          <input type="submit" value="Search" class="btn btn-primary shadow-sm">
-          <button id="current-location" class="btn btn-success">Current location</button>
-          </form>
-      
-          <br />
-          <br />
-          <br />
-
-          <div class="daily_output">
-          <div><h2 id="city">London</h2></div>
-          
-          <span id="temperature">18</span><a href="#" id="celsius-link" class="active">°C</a> <span class="dash">|</span><a href="#" id="fahrenheit-link">°F</a>
-          
-          <img src="#" id="icon" alt="sunny cloud"> 
-            <ul>
-              <li id="description">Sunny</li>
-             <li>Humidity: <span id="humidity">52</span>%</li>
-             <li>Wind: <span id="wind">9</span>mph</span></li>
-           </ul>
+    <div class="container">
+      <div class="weather-app">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                class="form-control"
+                id="city-input"
+                placeholder="Enter a town, city or UK postcode"
+                autofocus="on"
+              />
+            </div>
+            <div class="col-1">
+              <input type="submit" value="🔍" class="btn search-button" />
+            </div>
+            <div class="col-5">
+              <button id="current-location" class="btn btn-success">
+                Current location
+              </button>
+            </div>
           </div>
-      
-       <div class="hourly-weather-forecast" id="hourlyForecast"></div>
-      
-       <div class="weather-forecast" id="forecast"></div>
-        
-<footer><a href="https://github.com/Khola94/Project">Open-source</a> code by Khola Ahmed</footer>
-        <script src="script.js"></script>
+        </form>
+        <br />
+        <div class="daily_output"></div>
+
+        <h1 id="city">Paris</h1>
+        <h5 class="current-time" id="current-date">Monday, 11th Jan</h5>
+        <li class="timeframe">
+          Last updated today at<span class="time"> 18:50</span>
+        </li>
+        <br />
+        <br />
+
+        <div class="row">
+          <div class="col-3">
+            <span id="temperature">18</span>
+            <a href="#" id="celsius-link" class="active">°C</a>
+            <span class="dash">|</span><a href="#" id="fahrenheit-link">°F</a>
+          </div>
+          <div class="col-3">
+            <img src="#" id="icon" alt="sunny cloud" />
+          </div>
+
+          <div class="col-6">
+            <div class="container grid">
+              <div class="row row-cols-2">
+                <div class="col box">
+                  <span id="humidity">97</span>%
+                  <li>💧</li>
+                  <li>Humidity</li>
+                  <br>
+                </div>
+                <div class="col box">
+                  <span id="wind">1</span> kmh
+                  <li>💨</li>
+                  <li>Wind</li>
+                  <br>
+                </div>
+                <div class="col box">
+                  <span id="max">5</span>°C
+                  <div>
+                   <li>Max Temp</li>
+                  </div>
+                </div>
+                <div class="col box">
+                  <span id="min">0</span>°C
+                  <div>
+                   <li>Min Temp</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="hourly-weather-forecast" id="hourlyForecast"></div>
+      <div class="weather-forecast" id="forecast"></div>
+
+      <footer>
+        <a href="https://github.com/Khola94/Project">Open-source</a> code by
+        Khola Ahmed
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

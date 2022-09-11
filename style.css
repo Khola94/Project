@@ -1,16 +1,40 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/236/original/sky.jpg?1654337658");
-  color: white;
-  padding: 80px;
-  border: 50px;
+  color: black;
+  padding: 40px;
+}
+
+.weather-app {
+  border: 1px solid #dadce0;
+  padding: 60px 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  opacity: 0.9;
+  border-radius: 30px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.city {
+  position: relative;
 }
 
 h1 {
   font-size: 48px;
 }
 
-h2,
+.pin-location {
+  font-size: 40px;
+}
+
 #temperature {
+  font-size: 64px;
+}
+
+.city {
   font-size: 40px;
 }
 
@@ -29,7 +53,7 @@ li {
 .dash {
   display: inline-block;
   position: relative;
-  top: -18px;
+  top: -30px;
   text-decoration: none;
 }
 
@@ -39,9 +63,8 @@ li {
 
 #icon {
   width: 200px;
-  position: absolute;
-  left: 300px;
-  top: 300px;
+  position: relative;
+  float: right;
 }
 
 .weatherinfo,
@@ -71,7 +94,7 @@ footer {
 }
 
 .active {
-  color: white;
+  color: #383838;
   cursor: default;
 }
 
